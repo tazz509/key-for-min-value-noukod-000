@@ -3,12 +3,12 @@
 
 def key_for_min_value(name_hash)
 
-  value = "$"
+  val = "$"
  key = nil
  name_hash.collect{|key, value|
-                           value = value=="$"? v : value
-                           if(v <= value)
-                             value = v
+                           val = val=="$"? v : val
+                           if(v <= val)
+                             val = v
                              key = k
                            end
                          }
